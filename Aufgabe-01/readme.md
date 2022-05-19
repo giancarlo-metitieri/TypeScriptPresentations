@@ -75,11 +75,35 @@ for (let index in nums) { ... }
 ```
 ### map
 
+Returns a new array with changed values. In the function, the returned value will be the new Value
+
+```typescript
+var numbers : number[] = [45, 4, 9, 16, 25]
+
+let numbers2 = numbers.map(increase)
+
+function increase(i : number) {
+    return i + 1
+}
+
+console.log(numbers2)
+```
 
 ### filter
 
+Returns a new array with filtered values. Only when true is returned, the values will be kept.
 
-### indexOf
+```typescript
+var numbers : number[] = [45, 4, 9, 16, 25]
+
+let numbers3 = numbers.filter(filter)
+
+function filter(i : number) {
+    return i > 10
+}
+
+console.log(numbers3)
+```
 
 
 # Quellen
