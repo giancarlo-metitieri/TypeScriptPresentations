@@ -27,31 +27,49 @@ Die Iterationen die hier genauer angeschaut werden, sind diese:
 
 ## Iterationen
 
+### for .. of
+
+just a for that takes elements from an array and lets you do something with them
+
+```typescript
+for (let element of nums) { s.. }
+```
 ### forEach
 
-var nums : Array<number> = [1, 5];
-function callbackFunction (elem : number, index : number, array : number[]) {       //callback function
-    console.log("current element: ", elem)
-    console.log("current index", index)
-    console.log("array: ", array)
-}
-nums.forEach(callbackFunction)  
-console.log("\n\n")
-nums.forEach((elem : number, index : number, array : number[]) => {
-    console.log("current element: ", elem)
-    console.log("current index", index)
-    console.log("array: ", array)
-});
-console.log("\n\n")
-nums.forEach(function(elem : number) {console.log("current element: ", elem)} )     
-console.log("\n\n")
-nums.forEach(function(elem : number, index : number) {console.log("current element: ", elem); console.log("current index", index)} )
-console.log("\n\n")
-nums.forEach(function(elem : number, index : number, array : number[]) {console.log("current element: ", elem); console.log("current index", index); console.log("array: ", array); } )
+callback function: 
+```typescript
+function callbackFunction (element, index, array) { ... }
+```
+call the callback function: 
 
+```typescript
+nums.forEach(callbackFunction)  
+```
+alternatively, we move the callback function to be inline. This is done witth either an arrow or a direct function declaration
+
+```typescript
+nums.forEach((element, index, array) => {
+    ...
+});
+```
+we are not forced to use element, index and array. For instance, we can also just use element
+```typescript
+nums.forEach(function(elem) {...} ) 
+
+nums.forEach(function(element, index, array) {...} )
+```
+
+### for .. in
+
+for in loops, for our purposes, returns indeces. Technically, it works on any object and returns "keys" for that object (in our case, indeces of an array).
+
+```typescript
+for (let index in nums) { ... }
+```
 ### map
 
 
 # Quellen
 
 [w3-Schools](https://www.w3schools.com/js/js_array_iteration.asp)
+[MDN] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
