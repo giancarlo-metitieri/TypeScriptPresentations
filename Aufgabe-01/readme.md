@@ -1,31 +1,38 @@
 # Array Iterations
 
 ## Overview
-Dies ist eine Liste von Möglichen Iterationen:
+list of possible iterations:
 
-> numbers.forEach
-> numbers.map
-> numbers.filter
-> numbers.reduce
-> numbers.reduceRight
-> numbers.every
-> numbers.some
-> numbers.indexOf
-> numbers.lastIndexOf
-> numbers.find
-> numbers.findIndex
-> numbers.keys
-> numbers.entries
-> numbers.includes
+```typescript
+numbers.forEach
+numbers.map
+numbers.filter
+numbers.reduce
+numbers.reduceRight
+numbers.every
+numbers.some
+numbers.indexOf
+numbers.lastIndexOf
+numbers.find
+numbers.findIndex
+numbers.keys
+numbers.entries
+numbers.includes
+for .. of
+for .. in
+```
 
-Die Iterationen die hier genauer angeschaut werden, sind diese:
+List of iterations which we will look at:
 
-> numbers.forEach
-> numbers.map
-> numbers.filter
-> numbers.indexOf
-
-## Iterationen
+```typescript
+for .. of
+numbers.forEach
+for .. in
+numbers.map
+numbers.filter
+numbers.indexOf
+```
+## Iterations
 
 ### for .. of
 
@@ -67,6 +74,12 @@ for in loops, for our purposes, returns indeces. Technically, it works on any ob
 for (let index in nums) { ... }
 ```
 ### map
+
+
+### filter
+
+
+### indexOf
 
 
 # Quellen
