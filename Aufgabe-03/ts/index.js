@@ -12,11 +12,11 @@ function mapDemo() {
     testMap.set("Seiler", "Yannis");
     testMap.set("Hug", "Noel");
     // get 
-    console.log(testMap.get("Seiler"));
+    console.log("Map get ", testMap.get("Seiler"));
     // has
-    console.log(testMap.has("Seiler"));
+    console.log("Map has ", testMap.has("Seiler"));
     // size
-    console.log(testMap.size);
+    console.log("Map size ", testMap.size);
     // delete
     testMap["delete"]("Hug");
     // clear
@@ -26,24 +26,26 @@ function setDemo() {
     // add
     testSet.add("Noel");
     testSet.add("Noel"); // unique
-    console.log(testSet);
+    console.log("Set add ", testSet);
     // has
-    console.log(testSet.has("Noel"));
+    console.log("Map has ", testSet.has("Noel"));
     // delete
-    testSet["delete"]("Noel");
+    testSet["delete"]("Noel ");
     // clear
     testSet.clear();
     // size
-    console.log(testSet.size);
+    console.log("Set size ", testSet.size);
 }
 function weakMapDemo() {
+    var person = new String("Seiler");
+    var person2 = new String("Hug");
     // adds new entry
-    testWeakmap.set("Seiler", "Yannis");
-    testWeakmap.set("Hug", "Noel");
+    testWeakmap.set(person, "Yannis");
+    testWeakmap.set(person2, "Noel");
     // get 
-    console.log(testWeakmap.get("Seiler"));
+    console.log("WeakMap get ", testWeakmap.get(person));
     // has
-    console.log(testWeakmap.has("Seiler"));
+    console.log("WeakMap has ", testWeakmap.has(person));
     // delete
-    testWeakmap["delete"]("Hug");
+    testWeakmap["delete"](person2);
 }
