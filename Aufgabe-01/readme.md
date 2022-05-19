@@ -30,7 +30,6 @@ numbers.forEach
 for .. in
 numbers.map
 numbers.filter
-numbers.indexOf
 ```
 ## Iterations
 
@@ -109,4 +108,4 @@ console.log(numbers3)
 # Quellen
 
 [w3-Schools](https://www.w3schools.com/js/js_array_iteration.asp)
-[MDN] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
