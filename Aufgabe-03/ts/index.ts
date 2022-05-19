@@ -7,3 +7,16 @@ let testSet = new Set<string>();
 //The weak map theory
 let testWeakmap = new WeakMap<String, String>();
 
+function mapDemo() {
+
+}
+
+
+function setDemo() {
+    
+}
+
+
+function weakMapDemo() {
+    
+}
